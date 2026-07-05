@@ -1,0 +1,81 @@
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("../Imagenes/PORTADA DE LA PAGINA.PNG");
+
+    background-size:cover;
+    background-position:center;
+
+    font-family:'Segoe UI',sans-serif;
+}
+
+.perfil-box{
+    width:450px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+    border-top:6px solid #00d084;
+}
+
+.perfil-box h1{
+    font-size:42px;
+    margin-bottom:30px;
+    color:black;
+}
+
+.perfil-box p{
+    background:#f5f5f5;
+    padding:15px;
+    margin:15px 0;
+    border-radius:12px;
+    font-size:18px;
+    text-align:left;
+}
+
+.perfil-box span{
+    color:#00d084;
+    font-weight:bold;
+}
+
+#editarNombre,
+#cambiarContraseña,
+#cerrarSesion{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    margin-top:15px;
+    transition:.3s;
+}
+
+#editarNombre{
+    background:#00d084;
+    color:white;
+}
+
+#cambiarContraseña{
+    background:#0066ff;
+    color:white;
+}
+
+#cerrarSesion{
+    background:#ff3b30;
+    color:white;
+}
+
+#editarNombre:hover,
+#cambiarContraseña:hover,
+#cerrarSesion:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}

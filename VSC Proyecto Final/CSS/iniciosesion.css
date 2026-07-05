@@ -1,0 +1,164 @@
+/* Selecciona TODOS los elementos de la página */
+*{
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+    box-sizing: border-box; /* Incluye padding y border dentro del ancho y alto */
+    text-decoration: none; /* Quita subrayados de enlaces */
+    font-family: "Roboto", sans-serif; /* Fuente general */
+}
+body{
+    background-image: url(../Imagenes/fondo_goalzone.jpeg); /* Imagen de fondo de la página */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* El fondo permanece fijo al hacer scroll */
+}
+
+main{
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px; /* Espacio interno de 20px */
+    margin: auto; /* Centra el contenedor */
+    margin-top: 100px; /* Lo separa 100px de la parte superior */
+}
+
+.caja-lider{
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 800px; /* Ancho máximo de 800px */
+    margin: auto; /* Centra horizontalmente */
+    position: relative; /* Permite posicionar elementos hijos respecto a este contenedor */
+}
+
+.CajaTrasera{
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    backdrop-filter: blur(5px); /* Aplica desenfoque al fondo */
+    background-color: #ffffffa6; /* Color azul oscuro semitransparente */
+}
+
+.CajaTrasera div{
+    margin: 100px 40px; /* Separación exterior */
+    color: rgb(79, 180, 87); /* Color del texto */
+    transition: all 500ms; /* Animación suave de medio segundo */
+}
+
+.CajaTrasera div p,
+.CajaTrasera div button{
+    margin-top: 30px; /* Espacio superior para párrafos y botones */
+}
+
+.CajaTrasera div h3{
+    font-weight: 400; /* Grosor de la fuente */
+    font-size: 26px; /* Tamaño del texto */
+}
+
+.CajaTrasera button{
+    padding: 10px 40px; /* Espacio interno del botón */
+    border: 2px solid rgb(79, 180, 87); /* Borde blanco */
+    background: transparent; /* Fondo transparente */
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: 600; /* Texto seminegrita */
+    cursor: pointer; /* Cambia el cursor a mano */
+    color: rgb(79, 180, 87); /* Color del texto */
+    outline: none; /* Elimina borde azul al seleccionar */
+    transition: all 300ms; /* Animación suave */
+}
+
+.CajaTrasera button:hover{
+    background: #e6f1ff; /* Fondo blanco al pasar el mouse */
+    color: #94a3b8; /* Color del texto al pasar el mouse */
+}
+
+/* Formularios de Login y Registro */
+
+.CajaInicioRegistro{
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Ancho completo */
+    max-width: 380px; /* Máximo ancho */
+    position: relative; /* Permite mover el contenedor */
+    top: -185px; /* Lo desplaza hacia arriba */
+    left: 10px; /* Lo mueve hacia la derecha */
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.CajaInicioRegistro form{
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 80px 20px; /* Espacio interno */
+    background: #e4e4e4; /* Fondo azul oscuro */
+    position: absolute; /* Posicionamiento libre */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+.CajaInicioRegistro form h2{
+    font-size: 30px; /* Tamaño del título */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    color: rgb(79, 180, 87); /* Color azul */
+}
+
+.CajaInicioRegistro form input{
+    width: 100%; /* Ocupa todo el ancho */
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px; /* Espacio interno */
+    border: none; /* Sin borde */
+    background: #ffffff; /* Fondo gris */
+    font-size: 16px; /* Tamaño del texto */
+    outline: none; /* Quita borde al seleccionar */
+}
+
+.CajaInicioRegistro form button{
+    padding: 10px 40px; /* Espaciado interno */
+    margin-top: 40px; /* Espacio superior */
+    border: none; /* Sin borde */
+    font-size: 14px; /* Tamaño del texto */
+    background: rgb(79, 180, 87); /* Fondo blanco */
+    color: rgb(255, 255, 255); /* Texto azul oscuro */
+    cursor: pointer; /* Cursor tipo mano */
+    outline: none; /* Elimina borde azul */
+}
+
+.FormularioInicio{
+    opacity: 1; /* Totalmente visible */
+    display: block; /* Se muestra */
+    
+}
+button{
+    margin-left: 25%;
+}
+
+.FormularioRegistro{
+    display: none; /* Se oculta inicialmente */
+}
+/* Diseño adaptable para pantallas de 850px o menos */
+@media screen and (max-width: 850px) {
+
+    main{
+        margin-top: 50px; /* Reduce el margen superior para móviles */
+    }
+
+    .CajaTrasera{
+        max-width: 350px; /* Limita el ancho máximo */
+        height: 300px; /* Altura fija de la caja */
+        flex-direction: column; /* Los elementos pasan de horizontal a vertical */
+        margin: auto; /* Centra la caja */
+    }
+
+    .CajaTrasera div{
+        margin: 0px; /* Elimina márgenes */
+        position: absolute; /* Permite superponer elementos */
+    }
+
+    /* Formularios de Login y Registro */
+
+    .CajaInicioRegistro{
+        top: -10px; /* Ajusta la posición vertical */
+        left: -5px; /* Ajusta la posición horizontal */
+        margin: auto; /* Centra el contenedor */
+    }
+
+    .CajaInicioRegistro form{
+        position: relative; /* Permite que el formulario se adapte mejor en móviles */
+    }
+}

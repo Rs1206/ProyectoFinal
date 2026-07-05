@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalZone</title>
+    <link rel="stylesheet" href="CSS/iniciosesion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="caja-lider">
+            <!--caja trasera-->
+            <div class="CajaTrasera">
+                <!--caja trasera de inicio-->
+                <div class="CajaTraseraInicio">
+                   <h3>¿Ya tienes cuenta?</h3>
+                   <p>Inicia sesion para entrar a la pagina</p>
+                   <button id="botonInicioSesion">Inicio Sesion</button>
+                </div>
+                <!--caja trasera de registro-->
+                <div class="CajaTraseraRegistro">
+                   <h3>¿Aun no tienes cuenta?</h3>
+                   <p>Registrate para poder iniciar sesion</p>
+                   <button id="botonRegistrarse">Registrarse</button>
+                </div>
+            </div>
+        
+            <!--caja de login y Registro-->
+            <div class="CajaInicioRegistro">
+                <!--formulario de inicio-->
+                <form action="" class="FormularioInicio">
+                    <h2>Inicio Sesion</h2>
+                    <input type="text" placeholder="Ingrese su nombre" required>
+                    <input id="correoInicio" type="email" placeholder="Ingrese su correo" required>
+                    <input id="contraseñaInicio" type="password" placeholder="Ingrese su contraseña" required>
+                    <button>Entrar</button>
+                    <br><br>
+                    <p>
+                        <a href="#" id="recuperarContraseña">¿Olvidaste tu contraseña?</a>
+                    </p>
+                </form> 
+                <!--formulario de registro-->
+                <form action="" class="FormularioRegistro">
+                    <h2>Registrarse</h2>
+                    <input id="nombreRegistro" type="text" placeholder="ingrese nombre" required>
+                    <input id="correoRegistro" type="email" placeholder="ingrese correo" required>
+                    <input id="contraseñaRegistro" type="password" placeholder="ingrese contraseña" required>
+                    <button>Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="../JS/iniciosesion.js"></script>
+</body>
+</html>
