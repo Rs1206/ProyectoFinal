@@ -16,9 +16,12 @@
     <div class="topbar"></div>
 
     <nav class="navbar">
-      <div class="logo">GOAL<span>ZONE</span></div>
+      <button class="menu-toggle" id="menuToggle">
+      ☰
+      </button>
+       <div class="logo">GOAL<span>ZONE</span></div>
 
-      <ul class="menu">
+      <ul class="menu" id="menu">
         <li><a href="#selecciones">SELECCIONES</a></li>
         <li><a href="HTML/retro.html">CAMISETAS RETRO</a></li>
         <li><a href="#" class="btnContacto">CONTACTO</a></li>
@@ -694,8 +697,11 @@
               Total:
               <span id="total">$0</span>
           </h3>
+          <button id="vaciarCarrito" class="btnVaciar">
+          Vaciar carrito
+          </button>
 
-          <div class="pagos">
+          <div class="pagos" id="contenedorPagos">
             <button class="metodo-pago">Tarjeta</button>
 
             <button class="metodo-pago">Efectivo</button>

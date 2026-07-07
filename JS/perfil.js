@@ -3,7 +3,7 @@ const usuario = JSON.parse(
 );
 
 if(!usuario){
-    window.location.href = "HTML/micuenta.html";
+    window.location.href = "../HTML/micuenta.html";
 }
 
 document.getElementById("nombre").textContent =
@@ -45,6 +45,7 @@ document.getElementById("editarNombre")
         "usuarioActivo",
         JSON.stringify(usuario)
     );
+    localStorage.removeItem("carrito");
 
     location.reload();
 
@@ -86,13 +87,19 @@ document.getElementById("cambiarContraseña")
 
 
 // CERRAR SESIÓN
+function cerrarSesion(){
 
-document.getElementById("cerrarSesion")
-.addEventListener("click", ()=>{
+    localStorage.removeItem("usuarioActivo");
+    localStorage.removeItem("carrito");
 
-    localStorage.removeItem(
-        "usuarioActivo"
-    );
-    window.location.href ="index.html";
+    window.location.href = "../index.html";
 
-});
+}
+
+const btnCerrarSesion = document.getElementById("cerrarSesion");
+
+if(btnCerrarSesion){
+
+    btnCerrarSesion.addEventListener("click", cerrarSesion);
+
+}
