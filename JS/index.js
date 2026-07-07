@@ -69,7 +69,7 @@ if(cuentaNav && usuarioActivo){
     usuarioActivo.nombre;
 
     cuentaNav.href =
-    "../HTML/micuenta.html";
+    "HTML/micuenta.html";
 
 }
 
